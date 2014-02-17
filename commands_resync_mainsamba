@@ -1,0 +1,9 @@
+#Check current branch
+# git stash save -m wip
+git branch
+git checkout master
+git pull
+git branch
+git checkout <real_work_branch>
+git rebase -i master
+#git stash pop
