@@ -1,0 +1,121 @@
+    1  ls
+    2  sudo su
+    3  su
+    4  sudo su
+    5  exit
+    6  sudo su
+    7  exit
+    8  ssh -R 2222:localhost:22 lukem@hades.matws.net
+    9  ssh -R 2222:localhost:22 john@hades.matws.net
+   10  sudo su
+   11  ls -rtla
+   12  uname -a
+   13  free
+   14  ls
+   15  #pouet
+   16  testparm
+   17  dpkg -l | grep samba
+   18  sudo apt-get remove samba4-common-bin  samba-dsdb-modules python-samba  python-samba  libsamba-util0  libsamba-policy0  libsamba-hostconfig0  libsamba-credentials0 
+   19  rm -rf /usr/local/samba/private/*
+   20  sudo rm -rf /usr/local/samba/private/*
+   21  sudo find /usr/local/samba/ -type f 
+   22  dpkg 6L /usr/local/samba/lib/libdcerpc.so.0.0.1
+   23  dpkg -S /usr/local/samba/lib/libdcerpc.so.0.0.1 
+   24  sudo find /usr/local/samba/ -type f 
+   25  sudo find /usr/local/samba/ -type f -exec rm {} \; 
+   26  ls
+   27  cd samba/
+   28  ls
+   29  cd samba/
+   30  ls
+   31  ./bin/samba-tool domain join 
+   32  ./bin/samba-tool domain 
+   33  ./bin/samba-tool domain  -h
+   34  ./bin/samba-tool domain provision --realm new.gsoc.org --domain NGSOC --targetdir=/home/john/domains_samba --adminpass=Password123
+   35  sudo ./bin/samba-tool domain provision --realm new.gsoc.org --domain NGSOC --targetdir=/home/john/domains_samba --adminpass=Password123
+   36  moutn 
+   37  mount 
+   38  sudo vi /etc/fstab
+   39  mount -o remount,acl /
+   40  sudo mount -o remount,acl /
+   41  sudo ./bin/samba-tool domain provision --realm new.gsoc.org --domain NGSOC --targetdir=/home/john/domains_samba --adminpass=Password123
+   42  mount 
+   43  dpkg -l | grep acl
+   44  vi bin/config.log 
+   45  fg
+   46  ./configure.developer 
+   47  sudo rm -rf bin/
+   48  ./configure.developer 
+   49  ls -rtla
+   50  sudo chown john.john -R . 
+   51  ps ax | grep samba
+   52  kill 23478
+   53  sudo kill 23478
+   54  make
+   55  ./configure.developer 
+   56  vi bin/config.log 
+   57  find bin | grep confi
+   58  vi bin/default/include/config.h 
+   59  make -j 
+   60  ls
+   61  vi source4/dsdb/dns/gpo_update.c
+   62  nano source4/dsdb/dns/gpo_update.c
+   63  nano source4/dsdb/dns/dns_update.c 
+   64  vi source4/dsdb/dns/dns_update.c 
+   65  mkdir ~/.ssh/
+   66  mv ~/authorized_keys ~/.ssh/
+   67  vi source4/dsdb/dns/dns_update.c 
+   68  vi /home/john/.vimrc 
+   69  vi source4/dsdb/dns/dns_update.c 
+   70  dpkg -l | grep vi
+   71  sudo apt-get install vim
+   72  vi source4/dsdb/dns/dns_update.c 
+   73  fg
+   74  vi source4/dsdb/dns/dns_update.c 
+   75  fg
+   76  sudo ./bin/samba-tool domain provision --realm new.gsoc.org --domain NGSOC --targetdir=/home/john/domains_samba --adminpass=Password123
+   77  fg
+   78  make ctags
+   79  apt-cache search ctags
+   80  git grep "dns udpate" 
+   81  git grep "udpate command" 
+   82  git grep "update command" 
+   83  find . | grep samba_dnsupdate 
+   84  vi ./source4/scripting/bin/samba_dnsupdate 
+   85  fg
+   86  git status 
+   87  git reset --hard 
+   88  gdb
+   89  ls ~
+   90  ls ~/samba/
+   91  ls -rtl
+   92  sudo ./bin/samba-tool domain provision --realm new.gsoc.org --domain NGSOC --target_dir=/home/john/domains_samba --adminpass=Password123
+   93  sudo ./bin/samba-tool domain provision --realm new.gsoc.org --domain NGSOC --target-dir=/home/john/domains_samba --adminpass=Password123
+   94  ls /home/john
+   95  sudo gdb --arg ./bin/samba -i -M single -s /home/john/domains_samba/etc/smb.conf 
+   96  vi /home/john/samba/samba/source4/scripting/bin/samba_dnsupdate
+   97  fg
+   98  vi source4/dsdb/dns/dns_update.c 
+   99  ls
+  100  apt-cache search 
+  101  apt-cache search ctags
+  102  sudo apt-get install exuberant-ctags 
+  103  make ctags
+  104  fg
+  105  jobs
+  106  %3
+  107  history
+  108  history >~/debug_wçmatthieu
+  109  history >~/debug_w_matthieu
+  
+  #	modified:   bin/default/lib/param/param_proto.h
+#	modified:   lib/param/loadparm.c
+#	modified:   lib/param/param_functions.c
+#	modified:   lib/param/param_table.c
+#	modified:   libgpo/pygpo.c
+#	deleted:    python/gpclass.py
+#	modified:   python/samba/samdb.py
+#	deleted:    source4/dsdb/dns/gpo_update.c
+#	modified:   source4/dsdb/wscript_build
+#	deleted:    source4/scripting/bin/gpo_updates
+
